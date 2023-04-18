@@ -8,13 +8,13 @@ program fonksiyon_hesaplama
     do x = 1 , 4
 
         do  i = 1 , 5
-            y = y + j_toplam
             do j = 1 , 3
                 call hes(real(x),real(i),real(j),hes_sonuc)
                 j_toplam = j_toplam + hes_sonuc
             end do
         end do
-
+        
+         y = y + j_toplam
         write (*,*) "Y = " , y
 
     end do
